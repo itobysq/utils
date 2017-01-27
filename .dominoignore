@@ -1,0 +1,13 @@
+# Domino
+domino.log
+dominodump-*
+results/run-*/
+
+# Source control
+.git/
+.gitignore
+.svn/
+
+# Python
+*.pyc
+/venv
