@@ -70,8 +70,8 @@ vnoremap <Leader>s :sort<CR>
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
 " then press ``>`` several times.
-"" vnoremap < <gv  " better indentation
-"" vnoremap > >gv  " better indentation
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
 
 
 " Show whitespace
@@ -96,7 +96,7 @@ syntax on
 
 " Showing line numbers and length
 set number  " show line numbers
-set tw=79   " width of document (used by gd)
+set tw=99   " width of document (used by gd)
 set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
@@ -160,7 +160,9 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
-
+"settings for vim-sync
+"
+"
 "settings for flake8
 autocmd FileType python map <buffer> <Leader>t :call Flake8()<CR>
 
@@ -204,8 +206,6 @@ endfunction
 inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
 inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
-
 " Python folding
-" mkdir -p ~/.vim/ftplugin
-" wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
-"" set nofoldenable
+" cd ~/.vim/bundle
+" git clone https://github.com/tmhedberg/SimpylFold.git
