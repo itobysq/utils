@@ -1,0 +1,106 @@
+[{
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "listFocus"
+},
+{ "key": "Cmd+1","command": "workbench.action.openEditorAtIndex1" },
+{ "key": "Cmd+2","command": "workbench.action.openEditorAtIndex2" },
+{ "key": "Cmd+3","command": "workbench.action.openEditorAtIndex3" },
+{ "key": "Cmd+4","command": "workbench.action.openEditorAtIndex4" },
+{ "key": "Ctrl+1","command": "workbench.action.focusFirstEditorGroup" },
+{ "key": "Ctrl+2","command": "workbench.action.focusSecondEditorGroup" },
+{ "key": "Ctrl+3","command": "workbench.action.focusThirdEditorGroup" },
+{ "key": "Ctrl+4","command": "workbench.action.focusFourthEditorGroup" },
+{
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "listFocus"
+},
+{
+    "key": "enter",
+    "command": "list.select",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+},
+{
+    "key": "o",
+    "command": "list.toggleExpand",
+    "when": "listFocus"
+},
+{
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+},
+{
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+},
+{
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+},
+{
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenNavigatePrevious",
+    "when": "inQuickOpen"
+},
+{
+  "key": "cmd+d",
+  "command": "-editor.action.addSelectionToNextFindMatch",
+  "when": "editorFocus"
+},
+{
+  "key": "cmd+d",
+  "command": "-extension.vim_cmd+d",
+  "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl"
+},
+{
+  "key": "cmd+d",
+  "command": "workbench.action.splitEditor"
+}
+{
+  "key": "shift+cmd+d",
+  "command": "-workbench.view.debug"
+},
+{
+  "key": "shift+cmd+d",
+  "command": "workbench.action.splitEditorDown"
+},
+{
+  "key": "cmd+]",
+  "command": "-editor.action.indentLines",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "cmd+]",
+  "command": "workbench.action.nextEditor"
+},
+{
+  "key": "cmd+[",
+  "command": "-editor.action.outdentLines",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "cmd+[",
+  "command": "workbench.action.previousEditor"
+},
+{
+    "key": "n",
+    "command": "workbench.files.action.createNewFile",
+    "when": "explorerFocus"
+},
+{
+  "key": "shift+cmd+e",
+  "command": "workbench.view.explorer"
+},
+{
+  "key": "cmd+e",
+  "command": "-actions.findWithSelection"
+},
+{
+  "key": "cmd+e",
+  "command": "workbench.view.explorer"
+}
+]

@@ -1,0 +1,54 @@
+{
+  "workbench.editor.enablePreview": false,
+  "editor.rulers": [100],
+  "rewrap.wrappingColumn": 100,
+  "editor.parameterHints": false,
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+  ],
+  "vim.leader": "<,>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "window.zoomLevel": 0,
+  "editor.wordWrapColumn": 100,
+  "editor.minimap.enabled": false,
+"editor.detectIndentation": false,
+"files.trimTrailingWhitespace": true,
+}
