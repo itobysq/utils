@@ -1,6 +1,11 @@
 # Code style
 - Use Google Style Docstrings
 
+# Table migrations
+## Python
+1. Make the edit to the model
+2. Use alembic autogenerate to auto generate the alembic migration
+
 # Testing
 All testing is done through containers. 
 
